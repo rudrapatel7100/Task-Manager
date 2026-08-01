@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0f172a;
+}
+
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 45vh;
+  width: 50vw;
+  box-shadow: none;
+}
+
+form {
+  margin: 2rem 0 2rem 0;
+  display: flex;
+  gap: 10px;
+}
+
+form input,
+button {
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+form input {
+  flex: 1;
+  border: 1px solid lightgray;
+  font-size: 1rem;
+  height: 2.5rem;
+  padding-left: 1rem;
+}
+
+form input:focus {
+  border-color: #780000;
+}
+
+form button {
+  height: 2.5rem;
+  width: auto;
+  padding: 0 1.5rem;
+  background-color: #780000;
+  color: #ffff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+form button:focus {
+  outline: 1px solid #780000;
+  outline-offset: 2px;
+}
+
+form button:hover {
+  background-color: #5a0000;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #808080;
+}
+
+#task-list {
+  list-style: none;
+  margin-top: 1rem;
+  height: 35vh;
+  overflow-y: auto;
+}
+
+#task-list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #f1f5f9;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  gap: 1rem;
+}
+
+#task-list button {
+  background-color: #780000;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+}
+
+#task-list button:hover {
+  background-color: #5a0000;
+}
+
+#task-list li.completed {
+  opacity: 0.6;
+}
+
+#task-list li:hover {
+  background-color: #e2e8f0;
+}
+
+#task-list li.completed span {
+  text-decoration: line-through;
+}
+
+#task-list li span {
+  flex: 1;
+  text-align: left;
+}
+
+.filters {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.filters button {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid lightgrey;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.filters button:hover {
+  background-color: #f1f5f9;
+}
+
+#search-input {
+  width: 100%;
+  height: 2.5rem;
+  padding-left: 1rem;
+  border: 1px solid lightgrey;
+  border-radius: 0.75rem;
+  outline: none;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+#search-input:focus {
+  border-color: #780000;
+}
